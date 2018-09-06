@@ -16,7 +16,7 @@ define([
 
     return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
 
-        idgetsInTemplate: true,
+        widgetsInTemplate: true,
         templateString: template,
         layers: [],
 
