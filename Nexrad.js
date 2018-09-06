@@ -31,11 +31,16 @@ define([
         },
 
         _startTicker: function () {
+            this.startButton.setDisabled(true);
+            this.stopButton.setDisabled(false);
             t.start();
         },
 
         _stopTicker: function(){
+            this.startButton.setDisabled(false);
+            this.stopButton.setDisabled(true);
             t.stop();
+
             nexrad45m.hide();
             nexrad40m.hide();
             nexrad35m.hide();
@@ -46,7 +51,6 @@ define([
             nexrad10m.hide();
             nexrad5m.hide();
             nexrad.hide();
-
         },
 
 
